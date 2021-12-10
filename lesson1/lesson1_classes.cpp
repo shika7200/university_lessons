@@ -9,15 +9,17 @@ using namespace  std;
 
 class Func
 {
+
 public: double x;
-public: first();
-public: second();
+public: virtual first();
+
+public: virtual second();
 };
 
 class Z1 : public Func
 {
 
-    double Z1::first() {
+    double Z1::first(double x) {
     return ( (pow(x)+ 2*x - 3*x + (x+1) * (sqrt(pow(x) - 9)))/
             (pow(x)- 2*x -3 + (x+1) * (sqrt(pow(x) - 9 ))))
                 }
@@ -25,7 +27,7 @@ class Z1 : public Func
 class Z2 : public Func
         {
 
-            double Z2::second() {
+            double Z2::second(double x) {
     return ( sqrt((x+3)/(x-3)))
 // мы же не обязаны реализовывать все методы ? это же не интерфейс я правильно понимаю ?
     }
