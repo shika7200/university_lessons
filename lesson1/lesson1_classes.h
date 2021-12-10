@@ -4,5 +4,6 @@
 
 #ifndef lesson1_classes
 #define lesson1_classes
+// Здесь обявлять все классы созданные в classes или достаточно используемых?
 
 #endif
