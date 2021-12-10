@@ -8,10 +8,11 @@ using namespace  std;
 
 class Func
 {
-protected double x;
+protected : double x;
 public: first();
 public: second();
 };
+
 
 
 
