@@ -2,36 +2,45 @@
 /* студбилет 20516 - вариант 16 *\
  \********************************/
 #include <clocale>
+#include <iostream>
 #include "lesson1_classes.h"
 #include "math.h"
 
 using namespace  std;
 
-class Func
-{
 
-public: double x;
-public: virtual first();
 
-public: virtual second();
-};
+Z1::Z1(double x)
+         {
+    // public: нет смысла дублировать .h
+        firstVariable = x;
+        std::cout << "Обьект класса Z1 был создан" << std::endl;
+         }
+     Z1::~Z1()
+     {
+        std::cout << "Обьект класса Z1 был уничтожен " << std::endl;
+     }
 
-class Z1 : public Func
-{
-
-    double Z1::first(double x) {
-    return ( (pow(x)+ 2*x - 3*x + (x+1) * (sqrt(pow(x) - 9)))/
-            (pow(x)- 2*x -3 + (x+1) * (sqrt(pow(x) - 9 ))))
-                }
-};
-class Z2 : public Func
+     double Z1::Solution()
         {
+    return ( (pow(firstVariable)+ 2*firstVariable - 3*firstVariable + (firstVariable+1) * (sqrt(pow(firstVariable) - 9)))/
+            (pow(firstVariable)- 2*firstVariable -3 + (firstVariable+1) * (sqrt(pow(firstVariable) - 9 ))))
+        }
 
-            double Z2::second(double x) {
-    return ( sqrt((x+3)/(x-3)))
-// мы же не обязаны реализовывать все методы ? это же не интерфейс я правильно понимаю ?
-    }
-};
+ Z2::Z2(double x)
+        {// public: можно и здесь конечно но как понял лучше в .h?
+    secondVariable = x;
+    std::cout << "Обьект класса Z2 был создан" << std::endl;
+        }
+    Z2::~Z2()
+        {
+        std::cout << "Обьект класса Z2 был уничтожен " << std::endl;
+        }
+
+    double Z2::Solution()
+            {
+             return ( sqrt((secondVariable+3)/(secondVariable-3)))
+             }
 
 
 
