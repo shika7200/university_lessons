@@ -5,9 +5,9 @@
 
 class cycles {
 public:
-    double Variable;
-    Solution(double x);
-    ~Solution();
+    double variable, end, step, i;
+    cycles(double x,b,c);
+    ~cycles();
     double firstSolution();
     double secondSolution();
     double thirdSolution();

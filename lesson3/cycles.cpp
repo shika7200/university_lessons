@@ -10,27 +10,42 @@
 using namespace  std;
 
 
-cycles::cycles(double x)
+cycles::cycles(double x,double b,c)
 {
     // public: нет смысла дублировать .h
-    Variable = x;
-    cout << "Обьект класса Z1 был создан" << endl;
+    variable = x;
+    end = b;
+    step = c;
+    double i = 0;
+    cout << "Обьект класса cycles был создан" << endl;
 }
 cycles::~cycles()
 {
-    cout << "Обьект класса Z1 был уничтожен " << endl;
+    cout << "Обьект класса cycles был уничтожен " << endl;
 }
 
 double cycles::firstSolution()
-{  for
-    return
-}
+
+        {  for (i = variable; i<= end; i+= step)
+    {
+    cout << i << variable + cos(variable - 5) << endl;
+        }
+          return 0  }
 
 double cycles::secondSolution() {
-    return
+    while (variable < end ){
+        cout << i << variable + cos(variable - 5) << endl;
+    }
+    return 0
 }
 
 double cycles::thirdSolution() {
-    return
+    do
+    {
+        cout << i << variable + cos(variable - 5) << endl
+        variable += step;
+    }
+    while (variable <= end);
+    return 0
 }
 
