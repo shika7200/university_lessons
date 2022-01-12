@@ -23,8 +23,8 @@ Z1::Z1(double x)
 
      double Z1::Solution()
         {
-    return ( (pow(firstVariable)+ 2*firstVariable - 3*firstVariable + (firstVariable+1) * (sqrt(pow(firstVariable) - 9)))/
-            (pow(firstVariable)- 2*firstVariable -3 + (firstVariable+1) * (sqrt(pow(firstVariable) - 9 ))))
+    return  (pow(firstVariable,2)+ 2*firstVariable - 3*firstVariable + (firstVariable+1) * sqrt(firstVariable*firstVariable - 9))/
+            (pow(firstVariable,2)- 2*firstVariable -3 + (firstVariable+1) * sqrt(firstVariable*firstVariable - 9 ));
         }
 
  Z2::Z2(double x)
@@ -39,7 +39,7 @@ Z1::Z1(double x)
 
     double Z2::Solution()
             {
-             return ( sqrt((secondVariable+3)/(secondVariable-3)))
+             return ( sqrt((secondVariable+3)/(secondVariable-3)));
              }
 
 
