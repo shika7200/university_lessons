@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
     double x,b,c;
-    setlocale(LC_ALL, “RUS”);
+    setlocale(LC_ALL, "RUS");
     cout << "Введите значение x"<< endl;
     cin >> x;
     cout << "Введите конечное значение"<< endl;
@@ -20,6 +20,6 @@ int main() {
     cycle.firstSolution();
     cycle.secondSolution();
     cycle.thirdSolution();
-    system("pause")
+    system("pause");
     return 0;
 }

@@ -10,13 +10,13 @@
 using namespace  std;
 
 
-cycles::cycles(double x,double b,c)
+cycles::cycles(double x,double b, double c)
 {
     // public: нет смысла дублировать .h
     variable = x;
-    end = b;
+    DeadEnd = b;
     step = c;
-    double i = 0;
+    N = abs(DeadEnd -variable) / step;
     cout << "Обьект класса cycles был создан" << endl;
 }
 cycles::~cycles()
@@ -26,26 +26,34 @@ cycles::~cycles()
 
 double cycles::firstSolution()
 
-        {  for (i = variable; i<= end; i+= step)
+        {   double x = variable ;
+             for (int i = 0; i<= N; i++)
     {
-    cout << i << variable + cos(variable - 5) << endl;
+    cout << i  <<"\t первый метод \t"<< x + cos(x - 5) << endl;
+        x += step;
         }
-          return 0  }
+          return 0 ; } 
 
 double cycles::secondSolution() {
-    while (variable < end ){
-        cout << i << variable + cos(variable - 5) << endl;
+    double x = variable;
+    int i =0;
+    while ( i <= N ){
+        
+        cout << i <<"\t второй метод \t" << x + cos(x - 5) << endl;
+        i++;
     }
-    return 0
+    return 0;
 }
 
 double cycles::thirdSolution() {
+    int i;
+    double x = variable;
     do
-    {
-        cout << i << variable + cos(variable - 5) << endl
-        variable += step;
+    {  
+        cout << i << "\t третий метод \t"<< x + cos(x - 5) << endl;
+        i++;
     }
-    while (variable <= end);
-    return 0
+    while (i <= N);
+    return 0 ;
 }
 
