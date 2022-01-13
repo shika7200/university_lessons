@@ -2,19 +2,17 @@
  \********************************/
 //#pragma //как понял это какая-то удобная штука для отладки ?
 class Z1 
-{
+{ double x; double firstVariable;
 public:
-
-    double firstVariable;
+    
     Z1(double x);
     ~Z1();
     double Solution();
 };
 
 class Z2 
-{
+{ double x; double secondVariable;
 public:
-    double secondVariable;
     Z2(double x);
     ~Z2();
     double Solution();

@@ -11,9 +11,9 @@ using namespace  std;
 
 
 Z1::Z1(double x)
-         {
+         { firstVariable = x;
     // public: нет смысла дублировать .h
-        firstVariable = x;
+    
         std::cout << "Обьект класса Z1 был создан" << std::endl;
          }
      Z1::~Z1()
@@ -22,14 +22,14 @@ Z1::Z1(double x)
      }
 
      double Z1::Solution()
-        {
-    return  (pow(firstVariable,2)+ 2*firstVariable - 3*firstVariable + (firstVariable+1) * sqrt(firstVariable*firstVariable - 9))/
-            (pow(firstVariable,2)- 2*firstVariable -3 + (firstVariable+1) * sqrt(firstVariable*firstVariable - 9 ));
+        {    
+    return  (firstVariable*firstVariable+ 2.0*firstVariable - 3.0 + ((firstVariable+1.0) * sqrt(firstVariable*firstVariable - 9.0)))/
+            (firstVariable*firstVariable- 2.0*firstVariable - 3.0 + ((firstVariable+1.0) * sqrt(firstVariable*firstVariable - 9.0 )));
         }
 
  Z2::Z2(double x)
         {// public: можно и здесь конечно но как понял лучше в .h?
-    secondVariable = x;
+        secondVariable = x;
     std::cout << "Обьект класса Z2 был создан" << std::endl;
         }
     Z2::~Z2()
@@ -38,8 +38,8 @@ Z1::Z1(double x)
         }
 
     double Z2::Solution()
-            {
-             return ( sqrt((secondVariable+3)/(secondVariable-3)));
+            {  
+             return ( sqrt((secondVariable+3.0)/(secondVariable-3.0)));
              }
 
 

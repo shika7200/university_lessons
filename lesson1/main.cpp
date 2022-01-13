@@ -17,7 +17,8 @@ int main() {
    // z1.firstVariable = x; слишком сложно
     //z2.secondVariable = x;
     cout << "Z1 = " << z1.Solution() << endl;
-    cout << "Z1 = " << z2.Solution() << endl;
+    cout << "Z2 = " << z2.Solution() << endl;
+    cout << "S = " << z1.Solution()+z2.Solution() << endl;
     system("pause");
     return 0;
 }
