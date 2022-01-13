@@ -1,42 +1,37 @@
 //
-// Created by uguru on 09.12.2021. 6 Вариант Шиве Георгий
+// Created by uguru on 09.12.2021. 16 Вариант Шиве Георгий
 //
+#include "formules.h"
 #include <iostream>
 #include <cmath>
 #include <clocale>
-
-
+#include "conio.h"
 using namespace std;
 
-float Y(float a, float b, float c, float x) // определение функции
-{
-    return ((4,1*pow(a,3)*x - abs(b))*c )/pow((a+b),2);
-};
-float Z(float a, float b, float c) {
-    return (pow(10, -2)* (a + b )/(pow(a,3)* b))  - exp(a+b);
+     
+int main() {
+    float a; float b ; float c; float x;
+    setlocale(LC_ALL, "RUS");
+    cout << "Введите значение x"<< endl;
+    cin >> x;
+    cout << "Введите значение a"<< endl;
+    cin >> a;
+    cout << "Введите значение b"<< endl;
+    cin >> b;
+    cout << "Введите значение c"<< endl;
+    cin >> c;
+    formules solution(x,a,b,c);
 
-};
-
-int main() 	// основная программа
-
-{
-    setlocale(LC_ALL, “RUS”);
-    float a, b, c, x, y, z, S;
-    cout<<"Введите значения a, b, c, x: ";
-    cin >> a >> b >> c >> x;
-    if (( a+b == 0) || (pow(a,3)* b))
+    if (( x*x+b == (sqrt(2)/2)) || ( x*x+b == -(sqrt(2)/2)) || (pow(c,3)-pow(a,3)) == 0)
         // условие неопределенности
     {
         cout << "Возникла неопределенность, вычисления невозможны" << endl;
     }
     else
     {
-        y = Y(a,b,c,x);		// вызов функций
-        z = Z(a,b,c);
-        cout << "Y = "<< y << endl;
-        cout << "Z = "<< z << endl;
-        S = y + z;
-        cout << "S = " << S << endl;
+   cout << "y = \t "<< solution.y() << endl;
+   cout << "z = \t " << solution.z() << endl;
+   cout << "s = \t " << solution.y()+solution.y() << endl;
     }
     return 0;
 }

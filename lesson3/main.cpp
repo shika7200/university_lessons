@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    double x,b,c;
+    float x,b,c;
     setlocale(LC_ALL, "RUS");
     cout << "Введите значение x"<< endl;
     cin >> x;
