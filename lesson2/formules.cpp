@@ -4,7 +4,10 @@
 #include "math.h" 
 using namespace std;
 
-formules::formules(float x, float a , float b, float c)
+formules::formules(float x, float a , float b, float c) 
+/*Список аргументов состоит из перечисления тех переменных которые являютс я исходными для задачи 
+решаемой функцией  задачи каждаой переменной указывается ее тип. 
+ */
 {
     
     X = x;
