@@ -31,7 +31,7 @@ int main() {
     {
    cout << "y = \t "<< solution.y() << endl;
    cout << "z = \t " << solution.z() << endl;
-   cout << "s = \t " << solution.y()+solution.y() << endl;
+   cout << "s = \t " << solution.s() << endl;
     }
     return 0;
 }

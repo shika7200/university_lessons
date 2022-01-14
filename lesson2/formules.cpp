@@ -33,3 +33,6 @@ float formules::z() {
 };
 
 
+float formules::s() {
+    return y()+z() ;
+}

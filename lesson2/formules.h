@@ -6,5 +6,6 @@ public:
     ~formules();
     float y();
     float z();
+    float s();
 
 };
