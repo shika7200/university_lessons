@@ -28,7 +28,8 @@ int main() {
         cout << "Возникла неопределенность, вычисления невозможны" << endl;
     }
     else
-    {
+    { 
+
    cout << "y = \t "<< solution.y() << endl;
    cout << "z = \t " << solution.z() << endl;
    cout << "s = \t " << solution.s() << endl;

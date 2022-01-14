@@ -7,6 +7,8 @@
 #include <clocale>
 using namespace std;
 
+
+
 int main() {
     float x,b,c;
     setlocale(LC_ALL, "RUS");
@@ -16,10 +18,22 @@ int main() {
     cin >> b;
     cout << "Введите значение шага"<< endl;
     cin >> c;
-    cycles cycle(x,b,c);
+  cycles cycle(x,b,c);
+    int key;
+    cout << "Введите ключ(1- for , 2- while, 3- do while): ";
+    cin >> key;
+    switch(key) {
+        case 1: { cycle.firstSolution();
+        break;}
+        case 2: {cycle.secondSolution();
+        break;}
+        case 3: {cycle.thirdSolution();
+        break;}
+        default: {
     cycle.firstSolution();
     cycle.secondSolution();
-    cycle.thirdSolution();
+    cycle.thirdSolution();}
+    }
     system("pause");
     return 0;
 }
