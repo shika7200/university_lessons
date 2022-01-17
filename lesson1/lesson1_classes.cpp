@@ -23,8 +23,8 @@ Z1::Z1(double x)
 
      double Z1::Solution()
         {    
-    return  (firstVariable*firstVariable+ 2.0*firstVariable - 3.0 + ((firstVariable+1.0) * sqrt(firstVariable*firstVariable - 9.0)))/
-            (firstVariable*firstVariable- 2.0*firstVariable - 3.0 + ((firstVariable+1.0) * sqrt(firstVariable*firstVariable - 9.0 )));
+    return  (firstVariable*firstVariable+ 2.0*firstVariable - 3.0 + (firstVariable+1.0) * sqrt(firstVariable*firstVariable - 9.0))/
+            (firstVariable*firstVariable- 2.0*firstVariable - 3.0 + (firstVariable-1.0) * sqrt(firstVariable*firstVariable - 9.0 ));
         }
 
  Z2::Z2(double x)
