@@ -34,6 +34,6 @@ int main() {
     cycle.secondSolution();
     cycle.thirdSolution();}
     }
-    system("pause");
+   // system("pause");
     return 0;
 }
